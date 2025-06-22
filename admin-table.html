@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Table</title>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/table.css" />
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner">
+            <!-- Start header -->
+            <header class="inner__header">
+                <!-- search -->
+                <div class="header__search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name placeholder="Search by name or ID" />
+                </div>
+                <!-- action -->
+                <div class="header__action">
+                    <i class="fa-solid fa-calendar-days header__action--schedule"></i>
+                    <i class="fa-solid fa-filter  header__action--filter"></i>
+                </div>
+                <!-- status -->
+                <div class="header__status">
+                    <div class="header__status--active">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Active</span>
+                    </div>
+                    <div class="header__status--not-found">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Not Found</span>
+                    </div>
+                </div>
+                <!-- import -->
+                <div class="header__import">
+                    <i class="fa-solid fa-file-csv"></i>
+                </div>
+            </header>
+            <!-- End header -->
+            <!-- Start table -->
+            <div class="inner_table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Business Listing</th>
+                            <th>Start Date</th>
+                            <th>Vendor ID</th>
+                            <th>Status</th>
+                            <th>Region</th>
+                            <th>Posts</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4651285.jpg"
+                                        alt="avt">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <span>Krusty Krab Ltd.</span>
+                            </td>
+                            <td>8/21/15</td>
+                            <td>765594</td>
+                            <td><span class="status-active">Active</span></td>
+                            <td>Canada (Central)</td>
+                            <td>70</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4651285.jpg"
+                                        alt="avt">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <span>NetWrangler Inc.</span>
+                            </td>
+                            <td>5/7/16</td>
+                            <td>558612</td>
+                            <td><span class="status-active">Active</span></td>
+                            <td>US East (Ohio)</td>
+                            <td>41</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4651285.jpg"
+                                        alt="avt">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <span>Chumhum Ltd.</span>
+                            </td>
+                            <td>5/19/12</td>
+                            <td>665137</td>
+                            <td><span class="status-not-found">Not Found</span></td>
+                            <td>EU (Ireland)</td>
+                            <td>46</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4651285.jpg"
+                                        alt="avt">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <span>Globex Corp.</span>
+                            </td>
+                            <td>3/12/17</td>
+                            <td>876453</td>
+                            <td><span class="status-active">Active</span></td>
+                            <td>Asia Pacific (Tokyo)</td>
+                            <td>58</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4651285.jpg"
+                                        alt="avt">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <span>Vandelay Industries</span>
+                            </td>
+                            <td>11/5/18</td>
+                            <td>453219</td>
+                            <td><span class="status-not-found">Not Found</span></td>
+                            <td>US West (N. California)</td>
+                            <td>34</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4651285.jpg"
+                                        alt="avt">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <span>Stark Industries</span>
+                            </td>
+                            <td>6/30/19</td>
+                            <td>792136</td>
+                            <td><span class="status-active">Active</span></td>
+                            <td>EU (Frankfurt)</td>
+                            <td>102</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4651285.jpg"
+                                        alt="avt">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <span>Pied Piper</span>
+                            </td>
+                            <td>2/25/20</td>
+                            <td>335784</td>
+                            <td><span class="status-active">Active</span></td>
+                            <td>Asia Pacific (Singapore)</td>
+                            <td>22</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4651285.jpg"
+                                        alt="avt">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <span>Umbrella Corp.</span>
+                            </td>
+                            <td>4/18/14</td>
+                            <td>908472</td>
+                            <td><span class="status-not-found">Not Found</span></td>
+                            <td>South America (São Paulo)</td>
+                            <td>67</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4651285.jpg"
+                                        alt="avt">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <span>Hooli</span>
+                            </td>
+                            <td>9/3/21</td>
+                            <td>673295</td>
+                            <td><span class="status-active">Active</span></td>
+                            <td>Canada (Central)</td>
+                            <td>39</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4651285.jpg"
+                                        alt="avt">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <span>Acme Corp.</span>
+                            </td>
+                            <td>1/11/13</td>
+                            <td>158937</td>
+                            <td><span class="status-active">Active</span></td>
+                            <td>Asia Pacific (Sydney)</td>
+                            <td>25</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4651285.jpg"
+                                        alt="avt">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <span>Dunder Mifflin</span>
+                            </td>
+                            <td>7/16/15</td>
+                            <td>601384</td>
+                            <td><span class="status-not-found">Not Found</span></td>
+                            <td>US East (N. Virginia)</td>
+                            <td>12</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4651285.jpg"
+                                        alt="avt">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <span>Cyberdyne Systems</span>
+                            </td>
+                            <td>10/2/22</td>
+                            <td>734900</td>
+                            <td><span class="status-active">Active</span></td>
+                            <td>EU (London)</td>
+                            <td>77</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4651285.jpg"
+                                        alt="avt">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <span>Wonka Industries</span>
+                            </td>
+                            <td>12/9/16</td>
+                            <td>395001</td>
+                            <td><span class="status-active">Active</span></td>
+                            <td>Asia Pacific (Mumbai)</td>
+                            <td>49</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4651285.jpg"
+                                        alt="avt">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <span>Tyrell Corp.</span>
+                            </td>
+                            <td>8/29/20</td>
+                            <td>844612</td>
+                            <td><span class="status-not-found">Not Found</span></td>
+                            <td>Middle East (Bahrain)</td>
+                            <td>54</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4651285.jpg"
+                                        alt="avt">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <span>Ollivander Supplies</span>
+                            </td>
+                            <td>2/2/22</td>
+                            <td>121907</td>
+                            <td><span class="status-active">Active</span></td>
+                            <td>EU (Paris)</td>
+                            <td>63</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4651285.jpg"
+                                        alt="avt">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <span>Massive Dynamic</span>
+                            </td>
+                            <td>6/8/13</td>
+                            <td>291378</td>
+                            <td><span class="status-not-found">Not Found</span></td>
+                            <td>Asia Pacific (Jakarta)</td>
+                            <td>86</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4651285.jpg"
+                                        alt="avt">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <span>Prestige Worldwide</span>
+                            </td>
+                            <td>9/17/19</td>
+                            <td>509621</td>
+                            <td><span class="status-active">Active</span></td>
+                            <td>US West (Oregon)</td>
+                            <td>18</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4651285.jpg"
+                                        alt="avt">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <span>Bluth Company</span>
+                            </td>
+                            <td>3/29/18</td>
+                            <td>672384</td>
+                            <td><span class="status-active">Active</span></td>
+                            <td>Canada (Central)</td>
+                            <td>29</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4651285.jpg"
+                                        alt="avt">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <span>Oceanic Airlines</span>
+                            </td>
+                            <td>5/14/21</td>
+                            <td>985210</td>
+                            <td><span class="status-not-found">Not Found</span></td>
+                            <td>Asia Pacific (Seoul)</td>
+                            <td>91</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="avatar">
+                                    <img src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-user-flat-character-avatar-png-png-image_4651285.jpg"
+                                        alt="avt">
+                                    <i class="fa-solid fa-shield"></i>
+                                </div>
+                                <span>Initech</span>
+                            </td>
+                            <td>7/8/22</td>
+                            <td>438215</td>
+                            <td><span class="status-active">Active</span></td>
+                            <td>US East (Ohio)</td>
+                            <td>35</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <footer class="inner__footer">
+                <div class="footer__filter">
+                    <span>Row per page</span>
+                    <div class="select">20</div>
+                </div>
+                <div class="page">
+                    <span>1 - 20 of 460</span>
+                </div>
+                <div class="footer__action footer__action--pagination">
+                    <i class="fas fa-angle-double-left"></i> <!-- First -->
+                    <i class="fas fa-angle-left"></i> <!-- Previous -->
+                    <i class="fas fa-angle-right"></i> <!-- Next -->
+                    <i class="fas fa-angle-double-right"></i> <!-- Last -->
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
